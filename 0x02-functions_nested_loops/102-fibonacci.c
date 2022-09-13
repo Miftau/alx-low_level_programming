@@ -12,7 +12,7 @@ int main(void)
 	int a = 1;
 	int b = 2;
 
-	for (counter = 1; counter <= (countto / 2); counter++)
+	for (counter = 2; counter <= (countto / 2); counter++)
 	{
 		printf("%d %d ", a, b);
 		a += b;
