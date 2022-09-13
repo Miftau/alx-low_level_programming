@@ -9,7 +9,7 @@
  * On error, -1 is returned, and error is set appropriately.
  */
 
-int _putchar(char x);
+int _putchar(char c);
 
 /**
  * print_alphabet - print lowercase alphabet
@@ -38,7 +38,7 @@ int _islower(int x);
  * Return: 1 if lower or uppercase, 0 if not alphabet character
  */
 
-int _isalpha(int x);
+int _isalpha(int c);
 
 /**
  * print_sign - print sign of number
@@ -46,7 +46,7 @@ int _isalpha(int x);
  * Return: 1 if greater than 0, 0 if 0, -1 if less than 0
  */
 
-int print_sign(int x);
+int print_sign(int c);
 
 /**
  * _abs - computer absolute value of integer
