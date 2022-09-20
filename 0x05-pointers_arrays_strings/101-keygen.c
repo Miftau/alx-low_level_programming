@@ -1,9 +1,9 @@
 #include "main.h"
+#include <studio.h>
 #include <Windows.h>
 
 /*
- * Author: @OsandaMalith
- * Website: https://osandamalith.com
+ * Author: Miftau
  */
 
 void check(int *pid) {
