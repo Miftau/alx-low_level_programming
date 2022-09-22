@@ -93,4 +93,13 @@ char *leet(char *s);
 
 void print_number(int n);
 
+/**
+ * infinite_add - a function that adds two numbers.
+ *@ n1&n2: are the two numbers
+ *@ r: the buffer that the function will use to store the result
+ * size_r is the buffer size
+ */
+
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+
 #endif
