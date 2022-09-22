@@ -1,22 +1,21 @@
 #include "main.h"
 
 /**
- * _strncat - concatenate n bytes to destination string
+ * _strcat - concatenate two strings
  * @dest: string to be appended to
  * @src: string to append
- * @n: append n number of bytes(chars)
  * Return: concatenated string
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
 
-	while (dest[i] != '\0') /*i is index of null terminator*/
+	while (dest[i] != '\0')
 		i++;
 
-	while (src[j] != src[n]) /*append replacing null terminator*/
+	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
@@ -26,22 +25,21 @@ char *_strncat(char *dest, char *src, int n)
 
 	return (dest);
 }
-/* another method
-char *_strncat(char *dest, char *src, int n)
+
+/* another method using pointer notation
+char *_strcat(char *dest, char *src)
 {
-   //while dest exists and isn't null terminator yet
-   while (*dest)
-       dest++;
-   // replace dest while src exists and insert nulls till n bytes
-   for (i = 0; i < n; i++)
-   {
-	while (*src)
+        int i = 0;
+	int j = 0;
+	while (*(dest + i))
+	   i++;
+	while (*(src + j))
 	{
-		*dest = *src;
-		dest++;
-		src++;
+	   *(dest+i) = *(src+j);
+	   i++;
+	   j++;
 	}
-	*dest = '\0';
-   }
+	*(dest+i) = '\0';
+	return (dest);
 }
 */
