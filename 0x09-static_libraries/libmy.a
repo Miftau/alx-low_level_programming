@@ -3,3 +3,4 @@ ar -rc libmy.a _isupper.o _memset.o _strcat.o _isdigit.o _memcpy.o _strncat.o _a
 3-puts.o 3-strcmp.o 3-strspn.o 4-isalpha.o 4-strpbrk.o 5-strstr.o
 6-abs.o 9-strcpy.o _putchar.o
 ranlib libmy.a
+gcc main.o -L. -lmy -o main.c
