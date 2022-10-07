@@ -11,4 +11,6 @@ int *multiply(char *num1, int len_1, char *num2, int len_2, int len_r);
 int is_digit(char c);
 void print_me(int *sum_result, int len_r);
 
+int main(int argc, char **argv);
+
 #endif
